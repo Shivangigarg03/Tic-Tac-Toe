@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+li{
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    height: 5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gamecontainer{
+	display: flex;
+	justify-content: center;
+    margin-top: 7rem;
+}
+.left{
+    display: grid;
+    grid-template-columns: repeat(3,7vw);
+    grid-template-rows: repeat(3,7vw);
+}
+.box{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.boxtext{
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+}
+.right{
+    margin-left:4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.highlight{
+    background-color: aqua;
+}
+.right img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bl{
+    border-left:0 ;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.br{
+    border-right: 0;
+}
+h1{
+    font-size: 2.2vw;
+}
+#info{
+    margin: 1rem;
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+#reset{
+    font-size: 1.1vw;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    border-radius:1rem;
+    background-color:rgb(246, 240, 232) ;
+    cursor: pointer;
+}
+.cursor{
+    pointer-events: none;
+}
+@media screen and (max-width:600px) and (min-width:500px){
+    li{
+        font-size:1.5rem ;
+    }   
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    #info{
+    font-size: 2vw;
+    }
+    #reset{
+        font-size: 1.5vw;
+        padding: 0.4rem;
+    }
+}
+@media screen and (max-width:499px) and (min-width:400px){
+    li{
+        font-size:1.2rem ;
+    }   
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 1.1rem;
+    }
+    #info{
+    font-size: 2vw;
+    }
+    #reset{
+        font-size: 1.6vw;
+        padding: 0.3rem;
+    }    
+}
+@media screen and (max-width:400px) and (min-width:300px)  {
+    li{
+        font-size:0.9rem ;
+    } 
+    .gamecontainer{
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    h1{
+        font-size: 1.1rem;
+    }
+    #info{
+    font-size: 2.5vw;
+    }
+    .right{
+        margin-left: 2rem;
+    }
+    #reset{
+        font-size: 2vw;
+        padding: 0.3rem;
+        margin-top: 0;
+    }  
+}
+@media screen and (max-width:299px) {
+    li{
+        font-size:0.7rem ;
+    } 
+    .gamecontainer{
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    h1{
+        font-size: 0.7rem;
+    }
+    #info{
+    font-size: 3vw;
+    }
+    .right{
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+    #reset{
+        font-size: 3vw;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+    }
+}
